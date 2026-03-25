@@ -1,8 +1,16 @@
 import React from 'react'
+import './styles.css'
 
-function SingleProduct() {
+function SingleProduct({prod}) {
+
   return (
-    <div>SingleProduct</div>
+    <div className='products'>
+    <img src={prod.image} alt={prod.name} />
+    <div className='productsDesc'>
+        <span style={{fontWeight: 700}}>{prod.name}</span>
+        <span > ${prod.price }</span>
+    </div>
+    </div>
   )
 }
 
