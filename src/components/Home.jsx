@@ -3,7 +3,7 @@ import {faker} from '@faker-js/faker'
 import SingleProduct from './SingleProduct';
 faker.seed(100)
 
-function Home() {
+function Home({cart,setCart}) {
     
      const ProductArray = [...Array(10)].map(() => ({
             id : faker.string.uuid(),
@@ -13,10 +13,11 @@ function Home() {
 
 
 }))
-const [cart,setCart] = useState([])
+
 const [products]= useState(ProductArray)
 
   return (
+    <>
     <div className='productContainer'>
    {products.map((prod=>(
     
@@ -25,6 +26,7 @@ const [products]= useState(ProductArray)
     
    )))}
     </div>
+    </>
   )
 }
 

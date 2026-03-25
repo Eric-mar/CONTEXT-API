@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+// import './styles.css'
 
 function SingleProduct({prod,cart,setCart}) {
 
@@ -10,9 +10,10 @@ function SingleProduct({prod,cart,setCart}) {
         <span style={{fontWeight: 700}}>{prod.name}</span>
         <span > ${prod.price.substring(0,3) }</span>
     </div>
-    {cart.includes(prod)?( <button className='add' 
+    {cart.includes(prod)?( 
+        <button className='add' 
     onClick={()=>{
-        setCart(cart.filter(c=>{
+        setCart(()=> cart.filter(c=>{
             return c.id !== prod.id}))
     }}
     >Remove From Cart</button>

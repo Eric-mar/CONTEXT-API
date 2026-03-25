@@ -16,7 +16,7 @@ function Header() {
                 
             </li>
             <li className='nav'>
-                <Link to='/cart'>Cart {100}</Link>
+                <Link to='/cart'>Cart {Cart.length}</Link>
             </li>
         </ul>
     </div>
