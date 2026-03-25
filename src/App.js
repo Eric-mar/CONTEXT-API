@@ -9,8 +9,8 @@ function App() {
       <Header />
     <div className='App'>
       <Routes>
-    <Route path='/' Component={Home} exact />
-    <Route path='/cart' Component={Cart} />
+    <Route path='/' element={<Home/>} />
+    <Route path='/cart' element={<Cart/>} />
    </Routes>
    </div>
    

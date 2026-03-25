@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './styles.css'
+import Home from './Home'
+import Cart from './Cart'
 
 function Header() {
   return (
@@ -10,10 +12,12 @@ function Header() {
         </span>
         <ul className='nav' >
             <li className='prod'>
-                <Link to='to' >Home page</Link>
+                <Link to='/' >Home page</Link>
                 
             </li>
-            <li className='prod'>Cart {}</li>
+            <li className='nav'>
+                <Link to='/cart'>Cart {100}</Link>
+            </li>
         </ul>
     </div>
   )
