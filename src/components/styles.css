@@ -38,9 +38,15 @@
   flex-direction: column;
   border: 1px solid black;
 }
+.products img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
 .productDesc {
   display: flex;
+
   justify-content: space-between;
   padding: 5px;
 }

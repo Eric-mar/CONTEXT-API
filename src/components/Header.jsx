@@ -4,7 +4,7 @@ import './styles.css'
 import Home from './Home'
 import Cart from './Cart'
 
-function Header() {
+function Header({cart}) {
   return (
     <div>
         <span className='header'>
@@ -16,7 +16,7 @@ function Header() {
                 
             </li>
             <li className='nav'>
-                <Link to='/cart'>Cart {Cart.length}</Link>
+                <Link to='/cart'>Cart ({cart.length})</Link>
             </li>
         </ul>
     </div>

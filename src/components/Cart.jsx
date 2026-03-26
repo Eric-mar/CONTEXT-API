@@ -10,6 +10,7 @@ function Cart({ cart, setCart }) {
 
 
         , [cart]
+)
 
   return (
         <div>
